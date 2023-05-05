@@ -1,38 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Asap:wght@700&display=swap');
 
 #main {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    font-family: Amethysta, sans-serif;
-    flex-wrap: wrap;
+  width: 90%; /* change to a percentage value */
+  max-width: 500px; /* set a maximum width */
+  height: auto; /* change to auto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-family: Amethysta, sans-serif;
+  flex-wrap: wrap;
+}
+
+#title {
+  color: rgb(0, 124, 0);
+  padding-bottom: 30px;
+}
+
+#btn {
+  background-color: rgb(7, 128, 7);
+  color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: small;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+#resultado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.num {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-color: green;
+  border: solid;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 3px;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  #main {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    padding: 10px;
   }
 
   #title {
-    color: rgb(0, 124, 0);
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
-
   #btn {
-    background-color: rgb(7, 128, 7);
-    color: white;
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: small;
-    letter-spacing: 1px;
-    padding: 10px;
+    font-size: medium;
+    padding: 8px;
+    margin-top: 10px;
+  }
+
+  .num {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 30px;
+    padding: 2px;
+  }
+}
+
     margin-top: 15px;
   }
 
